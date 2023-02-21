@@ -4,7 +4,7 @@ E-commerce platform using DRF
 ## Features
 - [ ] User Registration
 - [ ] User login
-- [ ] Products table in admin panel only
+- [x] Products table in admin panel only
 - [ ] All users could add to the cart
 - [ ] All users could make orders with the products in the cart
 
@@ -14,9 +14,9 @@ E-commerce platform using DRF
     - [ ] Registration
     - [ ] Login
     - [x] Add Product model and show it in admin (product fields are: name, price)
-    - [ ] Get products and the query should:
-        - [ ] Order by price
-        - [ ] Search by name
+    - [x] Get products and the query should:
+        - [x] Order by price
+        - [x] Search by name
     - [ ] add to cart
     - [ ] get user cart
     - [ ] create an order with products in the cart
