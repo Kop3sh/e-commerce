@@ -13,7 +13,7 @@ E-commerce platform using DRF
 1. Create simple Rest APIs endpoints for:
     - [ ] Registration
     - [ ] Login
-    - [ ] Add Product model and show it in admin (product fields are: name, price)
+    - [x] Add Product model and show it in admin (product fields are: name, price)
     - [ ] Get products and the query should:
         - [ ] Order by price
         - [ ] Search by name
