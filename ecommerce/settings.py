@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "djoser",
 
     "products.apps.ProductsConfig",
+    "orders.apps.OrdersConfig",
 ]
 
 CORS_ALLOWED_ORIGINIS = [
