@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 
 from products.models import Product
 
-
 class Order(models.Model):
     user = models.ForeignKey(User, related_name="orders", on_delete=models.CASCADE)
     address = models.CharField(max_length=100)
@@ -13,13 +12,13 @@ class Order(models.Model):
     is_ordered = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    ordered_at = models.DateField()
+    ordered_at = models.DateField(blank=True, null=True)
 
     class Meta:
         ordering = ["-created_at"]
 
     def __str__(self) -> str:
-        return self.user
+        return f"{self.user} {self.is_ordered}"
 
     @property
     def get_cart_total(self):
@@ -38,7 +37,7 @@ class OrderItem(models.Model):
     quantity = models.IntegerField(default=1)
 
     def __str__(self) -> str:
-        return self.pk
+        return f"{self.pk}, {self.product}, {self.quantity}"
 
     @property
     def get_total(self):
