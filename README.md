@@ -2,8 +2,8 @@
 E-commerce platform using DRF
 
 ## Features
-- [ ] User Registration
-- [ ] User login
+- [x] User Registration
+- [x] User login
 - [x] Products table in admin panel only
 - [ ] All users could add to the cart
 - [ ] All users could make orders with the products in the cart
@@ -11,8 +11,8 @@ E-commerce platform using DRF
 ### Roadmap
 
 1. Create simple Rest APIs endpoints for:
-    - [ ] Registration
-    - [ ] Login
+    - [x] Registration
+    - [x] Login
     - [x] Add Product model and show it in admin (product fields are: name, price)
     - [x] Get products and the query should:
         - [x] Order by price
@@ -32,3 +32,7 @@ E-commerce platform using DRF
 - [ ] Adding nginx configuration and supervisor is a plus.
 - [ ] deploying the task on the server is a plus.
 - [ ] Using docker and docker-compose with your application is also a plus.
+
+
+### Project Design (mostly assumptions)
+- Used Token Authentication (Storing it in the db, less scalable but simpler to implement)
