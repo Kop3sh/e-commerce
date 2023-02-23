@@ -9,6 +9,6 @@ class Product(models.Model):
 
     class Meta:
         ordering = ("name", "price", "created_at", "updated_at",)
-    
+
     def __str__(self) -> str:
         return f"{self.name}, {self.price}"
